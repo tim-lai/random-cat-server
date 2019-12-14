@@ -1,0 +1,4 @@
+CAT_API_KEY="your_api_key_here"
+COOKIE_SESSION_KEY="some_random_password_secret"
+COOKIE_SESSION_USER="pick_a_default_username"
+COOKIE_ACCESS_ALLOWED_ID="pick_a_default_cookie_id"

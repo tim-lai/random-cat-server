@@ -1,0 +1,38 @@
+{
+  "name": "random-cat-server",
+  "version": "0.0.1",
+  "description": "Sample Express Cat Generator",
+  "author": "Tim Lai",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-client": "cd client && npm run build",
+    "start-client": "cd ../random-cat-cra && npm start",
+    "start-server": "nodemon --watch routes --watch modules --exec babel-node index.js",
+    "start-dev-server-client": "concurrently \"npm run start-server\" \"npm run start-client\""
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
+    "cookie-session": "^1.3.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.3",
+    "helmet": "^3.14.0",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.8"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "nodemon": "^2.0.1"
+  }
+}
